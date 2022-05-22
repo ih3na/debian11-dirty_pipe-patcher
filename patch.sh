@@ -20,17 +20,17 @@ cp $config /usr/src/kernel
 
 # Compiling and building the packages
 make deb-pkg LOCALVERSION=-falcot KDEB_PKGVERSION=$(make kernelversion)-1
-
+echo "Done up to this point"
 # Compiling externel modules
-apt install dahdi-dkms
-dkms status
-modinfo dahdi_dummy
+# apt install dahdi-dkms -y
+# dkms status
+# modinfo dahdi_dummy
 
 # Installing the packages
-cd ..
-pkgs=$(ls |grep .deb)
-dpkg -i $pkgs
+# cd ..
+# pkgs=$(ls |grep .deb)
+# dpkg -i $pkgs
 
 
 # Finishing things up
-echo "Done!"
+# echo "Done!"
