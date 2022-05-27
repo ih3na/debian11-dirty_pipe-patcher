@@ -6,7 +6,7 @@ config=$(ls /boot/|grep config)
 
 # Updating and Installing necessary packages
 apt update -y
-apt install linux-source hd-idle dpkg-dev libelf-dev libssl-dev rsync -y
+apt install linux-source hd-idle dpkg-dev libelf-dev libssl-dev rsync fakeroot build-essential ncurses-dev xz-utils bc flex bison -y
 
 # Extracting the Kernel Package
 cd /usr/src/
