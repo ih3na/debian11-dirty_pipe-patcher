@@ -13,7 +13,7 @@ this scirpt is made for manually compile and install the kernel version 5.18 whi
 ## Notes
 - Do not do configurations in the first make config
 - Clear the cryptograpic key locations in the oldconfig
-- Make the proper Kernel Hacks and Drivere configurations in the makecofig screen
+- Make the proper Kernel Hacks and Drivere configurations in the make config screen
 
 ## Special Credits
 - https://youtu.be/gfqeyxP4wWY
